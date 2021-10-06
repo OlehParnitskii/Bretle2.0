@@ -12,7 +12,8 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "subtitle": {
           "type": "text",
@@ -23,27 +24,36 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
         "description": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         },
         "share": {
           "type": "share",
-          "settings": {}
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
@@ -57,15 +67,44 @@
         "description",
         "share"
       ],
-      "settings": {}
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1633506948567818c5": {
+      "type": "apps",
+      "blocks": {
+        "feae54a5-2c86-45b4-a47c-0eb95656c91b": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "feae54a5-2c86-45b4-a47c-0eb95656c91b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "settings": {}
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "main",
+    "1633506948567818c5",
     "product-recommendations"
   ]
 }
