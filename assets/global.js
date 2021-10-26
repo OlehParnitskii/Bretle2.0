@@ -603,7 +603,7 @@ class VariantSelects extends HTMLElement {
     const newMedia = document.querySelector(
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
-
+	console.log(newMedia);
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
@@ -704,12 +704,9 @@ class VariantRadios extends VariantSelects {
 
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    console.log(fieldsets);
     this.options = fieldsets.map((fieldset) => {
-      console.log(Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked));
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
-    console.log(this.options);
   }
 }
 
