@@ -71,6 +71,11 @@
         "full_width": true
       }
     },
+    "163585212134514fc9": {
+      "type": "autoketing-customer-say",
+      "settings": {
+      }
+    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
@@ -187,6 +192,7 @@
   "order": [
     "image_banner",
     "rich_text",
+    "163585212134514fc9",
     "featured_products",
     "163585196717c5aef2",
     "collage",
