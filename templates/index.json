@@ -87,6 +87,12 @@
         "show_rating": false
       }
     },
+    "163585196717c5aef2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"autoketing-customize-position-reviews\"><\/div>"
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -176,21 +182,15 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "163585196717c5aef2": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div id=\"autoketing-customize-position-reviews\"><\/div>"
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
     "featured_products",
+    "163585196717c5aef2",
     "collage",
     "video",
-    "multi_column",
-    "163585196717c5aef2"
+    "multi_column"
   ]
 }
