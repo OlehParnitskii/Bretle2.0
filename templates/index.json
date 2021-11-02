@@ -176,6 +176,12 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "163585196717c5aef2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"autoketing-customize-position-reviews\"><\/div>"
+      }
     }
   },
   "order": [
@@ -184,6 +190,7 @@
     "featured_products",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "163585196717c5aef2"
   ]
 }
