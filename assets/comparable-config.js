@@ -1,5 +1,5 @@
 var comparableConfig = {
-  enabled: true,
+  enabled: false,
   enableStickyButton: true,
   compareFields: {
     price: true,
