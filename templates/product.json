@@ -100,11 +100,51 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16361056425b524fcc": {
+      "type": "collage",
+      "blocks": {
+        "94ccf011-c518-4a77-8cd3-2dc284a04279": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "cb339ac0-ddda-47e6-b0d9-23847339e95c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "ba7f23e4-5355-45ec-bc57-9e4e0e51b05f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-bridge-sitting-in-thick-pink-and-purple-fog.jpg",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "94ccf011-c518-4a77-8cd3-2dc284a04279",
+        "cb339ac0-ddda-47e6-b0d9-23847339e95c",
+        "ba7f23e4-5355-45ec-bc57-9e4e0e51b05f"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "main",
     "1633506948567818c5",
-    "product-recommendations"
+    "product-recommendations",
+    "16361056425b524fcc"
   ]
 }
