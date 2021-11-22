@@ -38,24 +38,24 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
         "dafb50d9-fada-4f6c-aa76-57f7d5339378": {
           "type": "shopify:\/\/apps\/back-in-stock-notifier\/blocks\/back_in_stock_notifier\/1fadf77e-ebd8-4e68-90cb-f24d97d07bde",
           "settings": {
             "show_bis_app_widget": false,
             "notify_btn_text": "NOTIFY ME WHEN IN STOCK",
             "notify_btn_backColor": "#000000",
-            "notify_btn_textColor": "#FFFFFF",
+            "notify_btn_textColor": "#ffffff",
             "notify_btn_borderColor": "#000000",
             "notify_btn_border_radius": 2,
             "notify_btn_border_size": 1,
             "notify_btn_position_desktop": "l",
             "notify_btn_position_mobile": "l"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -77,8 +77,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "dafb50d9-fada-4f6c-aa76-57f7d5339378",
+        "buy_buttons",
         "description",
         "share"
       ],
