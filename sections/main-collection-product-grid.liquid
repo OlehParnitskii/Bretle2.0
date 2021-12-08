@@ -458,6 +458,12 @@
 </div>
 
 <div id="CollectionProductGrid">
+  {% assign fruits = "apples, oranges, peaches, tomatoes" | split: ", " %}
+{% assign vegetables = "broccoli, carrots, lettuce, tomatoes" | split: ", " %}
+{% assign plants = fruits | concat: vegetables %}
+{{ plants | join: ", " }}
+  
+  
   
   {% assign test =  collections.test.products %}
   {% assign test2 =  collections.test-2.products %}
