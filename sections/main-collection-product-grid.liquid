@@ -471,6 +471,12 @@
  
   {% assign test_arr = test |concat: collections.test-2.products %}
   
+  
+  {% for i in collections.test-2.products %}
+  {{ i.title}}
+  
+{% endfor %}
+  
   	
   {{test |size}}
   {{test2 |size}}
