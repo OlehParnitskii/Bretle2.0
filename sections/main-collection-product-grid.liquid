@@ -463,9 +463,12 @@
   {% assign test2 =  collections.test-2.products %}
   
   {% assign test_arr = "" %}
-  
+  {% assign test_arr = test_arr |concat:test %}
+  {% assign test_arr = test_arr |concat:test2 %}
+  	
   {{test |size}}
   {{test2 |size}}
+  {{ test_arr |size }}
   
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
