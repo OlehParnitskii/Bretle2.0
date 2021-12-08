@@ -471,11 +471,14 @@
  
   {% assign test_arr = test |concat: collections.test-2.products %}
   
+  {%- paginate test2 by 2 -%}
   
-  {% for i in collections.test-2.products %}
+  {% for i in test2 %}
   {{ i.title}}
   
+  
 {% endfor %}
+  {%endpaginate%}
   
   	
   {{test |size}}
