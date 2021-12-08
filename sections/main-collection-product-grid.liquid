@@ -463,7 +463,7 @@
   {% assign test2 =  collections.test-2.products %}
   
  
-  {% assign test_arr = test |concat:test2 %}
+  {% assign test_arr = test |concat: collections.test-2.products %}
   
   	
   {{test |size}}
