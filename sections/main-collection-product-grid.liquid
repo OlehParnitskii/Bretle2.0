@@ -458,33 +458,6 @@
 </div>
 
 <div id="CollectionProductGrid">
-  {% assign fruits = "apples, oranges, peaches, tomatoes" | split: ", " %}
-{% assign vegetables = "broccoli, carrots, lettuce, tomatoes" | split: ", " %}
-{% assign plants = fruits | concat: vegetables %}
-{{ plants | join: ", " }}
-  
-  
-  
-  {% assign test =  collections.test.products %}
-  {% assign test2 =  collections.test-2.products %}
-  
- 
-  {% assign test_arr = test |concat: collections.test-2.products %}
-  
-  {%- paginate test2 by 2 -%}
-  
-  {% for i in test2 %}
-  {{ i.title}}
-  
-  
-{% endfor %}
-  {%endpaginate%}
-  
-  	
-  {{test |size}}
-  {{test2 |size}}
-  {{ test_arr  }}
-  
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
       <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
