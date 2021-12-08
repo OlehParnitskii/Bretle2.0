@@ -459,7 +459,11 @@
 
 <div id="CollectionProductGrid">
   
-  {{ collections.test.title }}
+  {% assign test =  collections.test.products %}
+  {% assign test2 =  collections.test-2.products %}
+  
+  {{test |size}}
+  {{test2 |size}}
   
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
