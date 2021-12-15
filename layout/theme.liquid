@@ -147,7 +147,7 @@
 {% endunless %}
     {% include 'customify-source' %} 
 
-    {{blog.tags}}
+    {{ request.path }}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
