@@ -146,6 +146,11 @@
   {% section 'header' %}
 {% endunless %}
     {% include 'customify-source' %} 
+    {% if template contains 'collection' %}
+    {% if current_page > 1 %}
+        Page number {{ current_page }}
+    {% endif %}
+	{% endif %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
