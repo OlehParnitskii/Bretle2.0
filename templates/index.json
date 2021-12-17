@@ -187,6 +187,12 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1639732132309ae48e": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
@@ -197,6 +203,7 @@
     "163585196717c5aef2",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "1639732132309ae48e"
   ]
 }
