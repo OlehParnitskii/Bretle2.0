@@ -193,6 +193,24 @@
       "settings": {
         "heading": "Contact form"
       }
+    },
+    "16400050060d2724e7": {
+      "type": "apps",
+      "blocks": {
+        "8672ba16-5a53-4afe-b026-62791b51bd69": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080,
+            "show_header": true
+          }
+        }
+      },
+      "block_order": [
+        "8672ba16-5a53-4afe-b026-62791b51bd69"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -204,6 +222,7 @@
     "collage",
     "video",
     "multi_column",
-    "1639732132309ae48e"
+    "1639732132309ae48e",
+    "16400050060d2724e7"
   ]
 }
