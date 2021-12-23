@@ -31,6 +31,7 @@
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     
+  {% include 'cm-head' %}
   {{ content_for_header }}
 
     {%- liquid
@@ -188,5 +189,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   
+  {% include 'cm-popups' %}
   </body>
 </html>
