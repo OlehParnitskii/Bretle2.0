@@ -1,0 +1,96 @@
+<div class="popup fixed-stretch d-none-important js-popup" tabindex="0">
+    <div class="popup__bg fixed-stretch cursor-pointer"></div>
+
+    <div class="popup__content position-relative d-flex justify-content-end d-none-important" data-js-popup-name="wishlist">
+        <div class="popup-wishlist py-30 px-20">
+            <div class="popup-wishlist__head d-flex align-items-center">
+                <h5 class="m-0">MY WISH LIST <span data-js-popup-wishlist-count></span></h5>
+                <span class="popup-wishlist__close ml-auto cursor-pointer js-popup-close">X</span>
+            </div>
+            <div class="popup-wishlist__content d-none-important">
+                <div class="popup-wishlist__items mt-20 cm-border-bottom"></div>
+                <div class="popup-wishlist__buttons mt-20">
+                    <a href="/wishlist" class="btn js-popup-button" data-js-popup-button="wishlist-full">View wish list</a>
+                </div>
+            </div>
+            <div class="popup-wishlist__empty mt-20 d-none-important">Your wish list is empty.</div>
+        </div>
+    </div>
+    <div class="popup__content position-relative d-flex justify-content-center d-none-important" data-js-popup-name="wishlist-full">
+        <div class="popup-wishlist-full py-30 px-20">
+            <div class="popup-wishlist-full__head d-flex align-items-center">
+                <span class="popup-wishlist-full__close ml-auto cursor-pointer js-popup-close">X</span>
+            </div>
+            <div class="popup-wishlist-full__content mt-30"></div>
+        </div>
+    </div>
+
+    <div class="popup__content position-relative d-flex justify-content-center d-none-important" data-js-popup-name="compare-full">
+        <div class="popup-compare-full py-30 px-20">
+            <div class="popup-compare-full__head d-flex align-items-center">
+                <span class="popup-compare-full__close ml-auto cursor-pointer js-popup-close">X</span>
+            </div>
+            <div class="popup-compare-full__content mt-30"></div>
+        </div>
+    </div>
+
+    <div class="popup__content position-relative d-flex flex-center px-15 py-30 d-none-important" data-js-popup-name="confirm-transfer-data">
+        <div class="popup-confirm-transfer-data position-relative py-30 px-15">
+            <span class="popup-confirm-transfer-data__close position-absolute cursor-pointer js-popup-close">X</span>
+            <div class="popup-confirm-transfer-data__content d-flex flex-column mx-auto text-center">
+                <h4 class="mb-15">WISH LIST AND COMPARE</h4>
+                <p class="mb-10">Do you want to add products to your personal account?</p>
+                <ul class="list-unstyled mb-20" data-js-transfer-data-info></ul>
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <div class="btn btn--secondary " data-js-button-transfer-data>YES</div>
+                        <div class="btn btn--secondary js-popup-close">NO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<template id="template-wishlist-ajax">
+    <div>
+        <div class="product-store-lists d-flex flex-row align-items-start mb-20" data-js-product="" data-product-handle="" data-product-variant-id="">
+            <div class="product-store-lists__image mr-15">
+                <a href="" class="d-block">
+                    <img src="//cdn.shopify.com/s/assets/no-image-100-c91dd4bdb56513f2cbf4fc15436ca35e9d4ecd014546c8d421b1aece861dfecf_100x.gif" srcset="//cdn.shopify.com/s/assets/no-image-100-c91dd4bdb56513f2cbf4fc15436ca35e9d4ecd014546c8d421b1aece861dfecf_100x.gif 1x, //cdn.shopify.com/s/assets/no-image-100-c91dd4bdb56513f2cbf4fc15436ca35e9d4ecd014546c8d421b1aece861dfecf_100x@2x.gif 2x" alt="">
+                </a>
+            </div>
+            <div class="product-store-lists__content d-flex flex-column align-items-start"><div class="product-store-lists__title mb-3">
+                    <h3 class="p m-0">
+                        <a href=""></a>
+                    </h3>
+                </div>
+                <div class="product-store-lists__variant"></div><div class="product-store-lists__price mt-10 mb-10">
+                    <span class="price" data-js-product-price="" data-js-show-sale-separator=""></span>
+                </div><span class="product-store-lists__remove btn-link js-store-lists-remove-wishlist">Remove</span></div>
+        </div>
+    </div>
+</template>
+
+<div class="scroll-offset-example"></div>
+
+<div class="cm-wishlist-button">
+    <a href="#"
+       class="cm-wishlist-icon js-popup-button"
+       data-js-information-input="wishlist"
+       data-js-popup-button="wishlist">
+        {% include 'icon-cmheart' %}
+        <span class="cm-wishlist-counter" data-js-wishlist-count="0">0</span>
+    </a>
+</div>
+
+<div class="cm-compare-button">
+    <a href="#"
+       class="cm-compare-icon js-popup-button"
+       data-js-information-input="compare"
+       data-js-popup-button="compare-full">
+        {% include 'icon-cmcompare' %}
+        <span class="cm-compare-counter" data-js-compare-count="0">0</span>
+    </a>
+</div>
